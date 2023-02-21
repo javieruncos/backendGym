@@ -3,7 +3,8 @@ import cors from "cors"
 import morgan from "morgan";
 import path from "path";
 import "./database";
-import ejercicioRoute from "./routes/ejercicios.routes"
+import ejercicioRoute from "./routes/ejercicios.routes";
+import usuarioRoute from "./routes/usuarios.routes"
 
 const app = express();
 
@@ -20,3 +21,4 @@ app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname,"../public")))
 
 app.use("/apiGym", ejercicioRoute)
+app.use("/apiGym",usuarioRoute)
