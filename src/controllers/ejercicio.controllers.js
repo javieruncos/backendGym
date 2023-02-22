@@ -4,7 +4,7 @@ import Ejercicio from "../models/producto";
 export const listaEjercicios = async (req, res) => {
   try {
     const ejercicios = await Ejercicio.find();
-    res.status(200).json({ ejercicios });
+    res.status(200).json([ejercicios]);
   } catch (error) {
     console.log(error);
     res.status(404).json({
