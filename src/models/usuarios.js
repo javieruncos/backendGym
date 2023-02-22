@@ -4,7 +4,6 @@ export const UsuariosSchema = new Schema({
     nombre:{
         type:String,
         required:true,
-        unique:true,
         minLength:2,
         maxLength:100,
     },
