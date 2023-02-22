@@ -13,8 +13,8 @@ app.listen(app.get("port"),()=>{
     console.log("estas en el puerto " + app.get("port"))
 })
 
-const list = ["https://backend-gym.vercel.app//apiGym/usuarios"]
-app.use(cors({origin:list}));
+
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extends:true}));
 app.use(morgan("dev"));
