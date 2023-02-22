@@ -21,4 +21,4 @@ app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname,"../public")))
 
 app.use("/apiGym", ejercicioRoute)
-app.use("/apiGym",usuarioRoute)
+app.use("/apiGym/auth",usuarioRoute)
