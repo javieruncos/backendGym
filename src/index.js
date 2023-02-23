@@ -5,6 +5,7 @@ import path from "path";
 import "./database";
 import ejercicioRoute from "./routes/ejercicios.routes";
 import usuarioRoute from "./routes/usuarios.routes"
+import * as dotenv  from "dotenv"
 
 const app = express();
 

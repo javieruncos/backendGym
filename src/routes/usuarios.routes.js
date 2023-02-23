@@ -26,7 +26,7 @@ router
     crearUsuario
   );
 router
-  .route("/")
+  .route("/usuarios/login")
   .post([
     check("email", "El mail es oblogatorio").isEmail(),
     check(
